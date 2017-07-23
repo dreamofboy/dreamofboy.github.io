@@ -168,92 +168,50 @@ Transfer rate
 传输速率。由公式totalread / 1024 / timetaken计算得到。
 
 简单实例
-
-3y2y@ubuntu:~$ ab -A 3y2y:12345678 -c 10 -n 100 http://www.3y2y.com/test.php
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
-
-Benchmarking www.3y2y.com (be patient).....done
-
-Server Software:        Apache/2.4.7
-Server Hostname:        www.3y2y.com
-Server Port:            80
-
-Document Path:          /test.php
-Document Length:        145609 bytes
-
-Concurrency Level:      10
-Time taken for tests:   20.053 seconds
-Complete requests:      100
-Failed requests:        0
-Total transferred:      14599400 bytes
-HTML transferred:       14560900 bytes
-Requests per second:    4.99 [#/sec] (mean)
-Time per request:       2005.339 [ms] (mean)
-Time per request:       200.534 [ms] (mean, across all concurrent requests)
-Transfer rate:          710.96 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:       51  128  77.1    102     434
-Processing:   738 1850 1863.2   1252    7533
-Waiting:       57  194 309.3    105    2328
-Total:       1001 1978 1875.2   1360    7799
-
-Percentage of the requests served within a certain time (ms)
-  50%   1360
-  66%   1404
-  75%   1468
-  80%   1521
-  90%   7456
-  95%   7526
-  98%   7736
-  99%   7799
- 100%   7799 (longest request)
-3y2y@ubuntu:~$ ab -A 3y2y:12345678 -c 20 -n 200 http://www.3y2y.com/test.php
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+<div class="highlight highlight-source-lisp"><pre>3y2y@ubuntu:~$ ab -A 3y2y:<span class="pl-c1">12345678</span> -c <span class="pl-c1">20</span> -n <span class="pl-c1">200</span> http://www.3y2y.com/test.php
+This is ApacheBench, Version <span class="pl-c1">2.3</span> &lt;$Revision: <span class="pl-c1">1528965</span> $&gt;
+Copyright <span class="pl-c1">1996</span> Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking yingtrader.pusunny.com (be patient)
-Completed 100 requests
-Completed 200 requests
-Finished 200 requests
+Completed <span class="pl-c1">100</span> requests
+Completed <span class="pl-c1">200</span> requests
+Finished <span class="pl-c1">200</span> requests
 
 
-Server Software:        Apache/2.4.7
+Server Software:        Apache/<span class="pl-c1">2.4.7</span>
 Server Hostname:        www.3y2y.com
-Server Port:            80
+Server Port:            <span class="pl-c1">80</span>
 
 Document Path:          /test.php
-Document Length:        145609 bytes
+Document Length:        <span class="pl-c1">145609</span> bytes
 
-Concurrency Level:      20
-Time taken for tests:   26.670 seconds
-Complete requests:      200
-Failed requests:        0
-Total transferred:      29198800 bytes
-HTML transferred:       29121800 bytes
-Requests per second:    7.50 [#/sec] (mean)
-Time per request:       2666.952 [ms] (mean)
-Time per request:       133.348 [ms] (mean, across all concurrent requests)
-Transfer rate:          1069.18 [Kbytes/sec] received
+Concurrency Level:      <span class="pl-c1">20</span>
+Time taken for tests:   <span class="pl-c1">26.670</span> seconds
+Complete requests:      <span class="pl-c1">200</span>
+Failed requests:        <span class="pl-c1">0</span>
+Total transferred:      <span class="pl-c1">29198800</span> bytes
+HTML transferred:       <span class="pl-c1">29121800</span> bytes
+Requests per second:    <span class="pl-c1">7.50</span> [<span class="pl-c1">#/sec</span>] (mean)
+Time per request:       <span class="pl-c1">2666.952</span> [ms] (mean)
+Time per request:       <span class="pl-c1">133.348</span> [ms] (mean, across all concurrent requests)
+Transfer rate:          <span class="pl-c1">1069.18</span> [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:       55  341 154.0    306     639
-Processing:  1216 2252 357.9   2303    3464
-Waiting:       53  486 313.1    403    1750
-Total:       1273 2594 358.9   2649    3612
+Connect:       <span class="pl-c1">55</span>  <span class="pl-c1">341</span> <span class="pl-c1">154.0</span>    <span class="pl-c1">306</span>     <span class="pl-c1">639</span>
+Processing:  <span class="pl-c1">1216</span> <span class="pl-c1">2252</span> <span class="pl-c1">357.9</span>   <span class="pl-c1">2303</span>    <span class="pl-c1">3464</span>
+Waiting:       <span class="pl-c1">53</span>  <span class="pl-c1">486</span> <span class="pl-c1">313.1</span>    <span class="pl-c1">403</span>    <span class="pl-c1">1750</span>
+Total:       <span class="pl-c1">1273</span> <span class="pl-c1">2594</span> <span class="pl-c1">358.9</span>   <span class="pl-c1">2649</span>    <span class="pl-c1">3612</span>
 
 Percentage of the requests served within a certain time (ms)
-  50%   2649
-  66%   2693
-  75%   2712
-  80%   2743
-  90%   2762
-  95%   3118
-  98%   3230
-  99%   3400
- 100%   3612 (longest request)
+  <span class="pl-c1">50</span>%   <span class="pl-c1">2649</span>
+  <span class="pl-c1">66</span>%   <span class="pl-c1">2693</span>
+  <span class="pl-c1">75</span>%   <span class="pl-c1">2712</span>
+  <span class="pl-c1">80</span>%   <span class="pl-c1">2743</span>
+  <span class="pl-c1">90</span>%   <span class="pl-c1">2762</span>
+  <span class="pl-c1">95</span>%   <span class="pl-c1">3118</span>
+  <span class="pl-c1">98</span>%   <span class="pl-c1">3230</span>
+  <span class="pl-c1">99</span>%   <span class="pl-c1">3400</span>
+ <span class="pl-c1">100</span>%   <span class="pl-c1">3612</span> (longest request)</pre></div>
+</div>
