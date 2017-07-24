@@ -214,4 +214,3 @@ Percentage of the requests served within a certain time (ms)
   <span class="pl-c1">98</span>%   <span class="pl-c1">3230</span>
   <span class="pl-c1">99</span>%   <span class="pl-c1">3400</span>
  <span class="pl-c1">100</span>%   <span class="pl-c1">3612</span> (longest request)</pre></div>
-</div>
