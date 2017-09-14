@@ -10,7 +10,12 @@ title: VirtualBox共享文件夹设置
 
 按常规在VirtualBox的设置中，设置好共享文件夹 —— 只勾选自动加载。
 启动虚拟机Ubuntu，试图进入共享文件夹，sf_xxx，提示没有权限。
-于是，将当前用户加入vboxsf用户组：sudo adduser username vboxsf，尝试进入共享文件夹，尽管windows中已经在该文件夹放入了文件，但Ubuntu中看上去依然空空如也。
+
+于是，将当前用户加入vboxsf用户组：
+
+    sudo adduser username vboxsf
+
+尝试进入共享文件夹，尽管windows中已经在该文件夹放入了文件，但Ubuntu中看上去依然空空如也。
 
 再次尝试Mount:
     
