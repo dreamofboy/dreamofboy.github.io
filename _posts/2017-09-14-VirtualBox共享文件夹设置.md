@@ -16,6 +16,7 @@ title: VirtualBox共享文件夹设置
     
     sudo mkdir /mnt/shared
     sudo mount -t vboxsf share /mnt/shared
+
 share就是创建的windows下共享文件夹的名字。
 
 终于可以了。
